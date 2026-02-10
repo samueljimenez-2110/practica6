@@ -1,0 +1,166 @@
+/* Línea 1: Configuración general del sitio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Tabla principal */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #5568d3;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.encabezado p {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Menú lateral */
+.menu {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.menu h3 {
+    margin-top: 0;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Paso 6: Quitar puntos de viñeta de la lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Paso 7: Formato para las opciones LI dentro de UL */
+ul li {
+    margin: 15px 0;
+}
+
+/* Paso 8: Configuración de enlaces A dentro de LI dentro de UL */
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #34495e;
+    transition: all 0.3s ease;
+}
+
+/* Paso 9: Animación hover para los botones de menú */
+ul li a:hover {
+    background-color: #3498db;
+    transform: translateX(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Paso 10: Subir contenido con vertical-align: top */
+.contenido {
+    padding: 30px;
+    vertical-align: top;
+    background-color: #ffffff;
+}
+
+/* Secciones */
+.seccion {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.seccion h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.seccion p {
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/* Logos de tecnologías */
+.logo {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 5px solid #2c3e50;
+}
+
+.pie p {
+    margin: 8px 0;
+    font-size: 0.95em;
+}
+
+.pie strong {
+    color: #3498db;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+    table, tr, td {
+        display: block;
+        width: 100%;
+    }
+    
+    .menu {
+        width: 100%;
+    }
+    
+    .logo {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+}
